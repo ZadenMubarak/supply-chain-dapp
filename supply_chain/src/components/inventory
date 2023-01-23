@@ -1,0 +1,17 @@
+const express = require('express');
+const app = express();
+
+// Example inventory data
+const inventory = {
+  'Product A': 10,
+  'Product B': 20,
+  'Product C': 5
+};
+
+app.get('/api/inventory', (req, res) => {
+  res.json(inventory);
+});
+
+app.listen(3000, () => {
+  console.log('Server started on port 3000');
+});
