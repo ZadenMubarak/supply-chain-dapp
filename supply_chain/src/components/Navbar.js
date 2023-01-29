@@ -9,6 +9,8 @@ const Navbar = () => {
   <div class="nav-header">
     <div class="nav-title">
       ScMa
+
+      <span style={{"position": "relative", "color":"green", "left":"80%", "background":"white", "borderRadius":"8px"}}>{"{ lamports: '0', solana: '0' }"}</span>
     </div>
   </div>
   <div class="nav-btn">

@@ -32,3 +32,12 @@
     border-bottom: 1px solid rgb(170, 167, 167);
   }
   
+.invl{
+  display: flex;
+  gap: 4px;
+  
+}
+
+.invl th{
+  width: 400px;
+}

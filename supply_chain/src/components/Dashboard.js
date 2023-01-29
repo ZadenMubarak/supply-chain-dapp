@@ -28,12 +28,19 @@ function Dashboard() {
         <table>
           <thead>
             <tr>
-              <th style={{'border-bottom':'1px solid navy'}}>Product</th>
-              <th style={{'border-bottom':'1px solid navy'}}>Current Level</th>
-              
+              <th style={{'border-bottom':'1px solid navy', "width":"400px"}}>Product :</th>
+              <th style={{'border-bottom':'1px solid navy', "width":"400px"}}>Current Level :</th>
+              <br/>            
               
             </tr>
           </thead>
+          <br/>
+          <div className='invl'>
+          <th className='textl'>Liqui Fruit orange</th>
+          <th className='skul'>400 Boxes of 1L</th>
+          
+        
+          </div>
           <tbody>
             {Object.keys(inventory).map((product, index) => (
               <tr key={index}>

@@ -16,10 +16,19 @@
   
   th {
     text-align: left;
-    padding: 12px;
+    padding: 22px;
     background-color: #f2f2f2;
     border-bottom: 1px solid #ccc;
   }
+
+tr{
+  display: flex;
+  gap: 1px;
+}
+
+tr th{
+  width: 240px;
+}
   
   td {
     padding: 12px;
@@ -41,6 +50,9 @@
   }
 
   .add-product-button {
+    position: absolute;
+    top: 55px;
+    left: 90%;
     background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
@@ -90,4 +102,33 @@
     border: none;
     cursor: pointer;
   }
+
+  .pref{
+
+    position: relative;
+    top: -10px;
+    border-bottom: 2px solid #575555;
+    border-radius: 4px;
+    height: 30px;
+    width: 200px;
+  }
   
+  .sref{
+    position: relative;
+    left: 4%;
+    top: -10px;
+    border-bottom: 2px solid #575555;
+    border-radius: 4px;
+    height: 30px;
+    width: 200px;
+  }
+
+  .iref{
+    position: relative;
+    left: 8%;
+    top: -10px;
+    border-bottom: 2px solid #575555;
+    border-radius: 4px;
+    height: 30px;
+    width: 200px;
+  }

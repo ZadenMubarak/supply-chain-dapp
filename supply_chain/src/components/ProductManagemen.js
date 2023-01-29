@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './ProductManagement.css';
+import { ListComponent } from './ListComponent';
 import Modal from 'react-modal';
+
 
 function ProductManagement() {
   // State to store the product list
@@ -19,37 +21,39 @@ function ProductManagement() {
       .then(data => setProducts(data));
   }, []);
 
+  const [components, setComponents] = useState([]); 
+
+  const prodctRef = useState([]);
+  const skuRef = useRef(null);
+  const invetoryRef = useState([]);
+
+
+  const [updated, setUpdated] = useState('');
+  const [updated1, setUpdated1] = useState('');
+  const [updated2, setUpdated2] = useState('');
+  
+
   const handleAddProduct = () => {
+    setUpdated(prodctRef.current.value);
+    setUpdated1(skuRef.current.value);
+    // setUpdated2(invetoryRef.current.value);
+    setComponents([...components, "Sample Component"]) 
     setModalIsOpen(true);
   }
 
-  const handleEditProduct = (product) => {
-    setProductBeingEdited(product);
-    setModalIsOpen(true);
-  }
-
-  const handleSaveProduct = () => {
-    // Save the new/edited product to the backend
-    // ...
-
-    // Close the modal
-    setModalIsOpen(false);
-  }
-
-  const handleDeleteProduct = (product) => {
-    // Delete the product from the backend
-    // ...
-
-    // Remove the product from the product list
-    setProducts(products.filter(p => p !== product));
-  }
-
+  
   return (
     <div className="product-management-container">
       <h1 className="page-title">Product Management</h1>
-      <button className="add-product-button" onClick={handleAddProduct}>Add Product</button>
+      <button className="add-product-button" onClick={handleAddProduct }>Add Product</button>
       <table>
         <thead>
+          <div>
+            <input placeholder='product' ref={prodctRef} className='pref'/>
+            <input placeholder='sku' ref={skuRef} className='sref'/>
+            <input placeholder='Inventory level' className='iref'/>
+
+          </div>
           <tr>
             <th>Product Name</th>
             <th>SKU</th>
@@ -71,6 +75,8 @@ function ProductManagement() {
           ))}
         </tbody>
       </table>
+      <br/>
+      {components.map((item, i) => ( <ListComponent text={updated} sku={updated1} inv={'4 X 1L -- 200 Boxes '}/> ))} 
     </div>
   );
 }

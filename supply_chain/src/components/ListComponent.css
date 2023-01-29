@@ -1,0 +1,29 @@
+
+.Component{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ddd;
+    width: 835px;
+    height: 60px;
+    border-radius: 8px;
+    box-shadow: 1px 14px solid black ;
+
+}
+
+.text{
+    position: absolute;
+    width: 20%;
+}
+
+
+
+.sku{
+    position: relative;
+    width: 20%;
+    left: 275px;
+}
+
+.inv{
+    position: relative;
+    width: 20%;
+    left: 277px;
+}

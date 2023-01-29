@@ -24,11 +24,17 @@ function TransactionHistory() {
       <table>
         <thead>
           <tr>
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Date</th>
+            <th style={{"width":"300px"}}>Product :</th>
+            <th style={{"width":"300px"}}>Quantity :</th>
+            <th style={{"width":"300px"}}>Date :</th>
           </tr>
         </thead>
+        <br/>
+        <div className='hisdiv'>
+          <th>Liqui Fruit</th>
+          <th>400 boxes</th>
+          <th>2023/01/29</th>
+        </div>
         <tbody>
           {transactions.map((transaction, index) => (
             <tr key={index}>
