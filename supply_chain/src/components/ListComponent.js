@@ -10,6 +10,7 @@ const ListComponent = (props) => {
         <th className='text'>{props.text}</th>
         <th className='sku'>{props.sku}</th>
         <th className='inv'>{props.inv}</th>
+        <th className='act'>{props.act}</th>
         
       
     </div> 

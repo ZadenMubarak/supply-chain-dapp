@@ -39,3 +39,12 @@ td {
 .hisdiv th{
   width: 300px;
 }
+
+.hisdiv1{
+  display: flex;
+  gap: 4px;
+}
+
+.hisdiv1 th{
+  width: 300px;
+}

@@ -10,9 +10,11 @@
   }
   
   .inventory-container {
-    border: 1px solid rgb(65, 64, 64);
+    border: 6px solid rgb(65, 64, 64);
+    background: rgb(226, 221, 221);
     padding: 20px;
     margin-bottom: 30px;
+
   }
   
   table {

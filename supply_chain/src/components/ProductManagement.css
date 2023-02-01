@@ -132,3 +132,13 @@ tr th{
     height: 30px;
     width: 200px;
   }
+
+  .aref{
+    position: relative;
+    left: 12%;
+    top: -10px;
+    border-bottom: 2px solid #575555;
+    border-radius: 4px;
+    height: 30px;
+    width: 200px;
+  }

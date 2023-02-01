@@ -1,9 +1,9 @@
 
 .Component{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #ddd;
-    width: 835px;
-    height: 60px;
+    background-color: rgb(255, 255, 255);
+    width: 935px;
+    height: 45px;
     border-radius: 8px;
     box-shadow: 1px 14px solid black ;
 
@@ -11,19 +11,25 @@
 
 .text{
     position: absolute;
-    width: 20%;
+    width: 240px;
 }
 
 
 
 .sku{
     position: relative;
-    width: 20%;
-    left: 275px;
+    width: 240px;
+    left: 244px;
 }
 
 .inv{
     position: relative;
-    width: 20%;
-    left: 277px;
+    width: 240px;
+    left: 250px;
+}
+
+.act{
+    position: relative;
+    width: 240px;
+    left: 256px;
 }

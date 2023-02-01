@@ -31,9 +31,15 @@ function TransactionHistory() {
         </thead>
         <br/>
         <div className='hisdiv'>
-          <th>Liqui Fruit</th>
-          <th>400 boxes</th>
+          <th>Liqui Fruit --Breakfast punch</th>
+          <th>400 Boxes</th>
           <th>2023/01/29</th>
+        </div>
+
+        <div className='hisdiv1'>
+          <th>Liqui Fruit --Orange</th>
+          <th>230 Boxes</th>
+          <th>2023/01/02</th>
         </div>
         <tbody>
           {transactions.map((transaction, index) => (
