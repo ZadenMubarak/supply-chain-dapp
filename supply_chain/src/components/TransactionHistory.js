@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './TransactionHistory.css';
+import Modal from './Modal';
 
 const transactions1 = {
     product:"pants",
@@ -10,6 +11,7 @@ const transactions1 = {
 function TransactionHistory() {
   // State to store the transaction history
   const [transactions, setTransactions] = useState([]);
+  const [modalOpen, setModalOpen] = useState(false);
 
   // Fetch the transaction history from the backend
   useEffect(() => {
@@ -20,6 +22,13 @@ function TransactionHistory() {
 
   return (
     <div className="transactions-container">
+      <button className='openModal'
+      onClick={
+        () => {
+          setModalOpen(true);
+        }
+      }
+      >View recent receipt</button>
       <h1 className="page-title">Transaction History</h1>
       <table>
         <thead>
@@ -41,6 +50,13 @@ function TransactionHistory() {
           <th>230 Boxes</th>
           <th>2023/01/02</th>
         </div>
+
+        <div className='hisdiv2'>
+          <th>Coca Cola</th>
+          <th>300 Boxes</th>
+          <th>2023/02/04</th>
+        </div>
+
         <tbody>
           {transactions.map((transaction, index) => (
             <tr key={index}>
@@ -51,6 +67,7 @@ function TransactionHistory() {
           ))}
         </tbody>
       </table>
+      {modalOpen && <Modal setOpenModal={setModalOpen}/>}
     </div>
   );
 }

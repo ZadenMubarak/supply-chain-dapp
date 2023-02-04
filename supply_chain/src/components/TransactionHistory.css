@@ -48,3 +48,25 @@ td {
 .hisdiv1 th{
   width: 300px;
 }
+
+.hisdiv2{
+  display: flex;
+  gap: 4px;
+}
+
+.hisdiv2 th{
+  width: 300px;
+}
+
+.openModal{
+  position: absolute;
+  top: 55px;
+  left: 87%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
