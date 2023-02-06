@@ -43,3 +43,12 @@
 .invl th{
   width: 400px;
 }
+
+.inv2{
+  display: flex;
+  gap: 4px;
+}
+
+.inv2 th{
+  width: 400px;
+}

@@ -36,11 +36,17 @@ function Dashboard() {
           </thead>
           <br/>
           <div className='invl'>
-          <th className='textl'>Liqui Fruit orange</th>
-          <th className='skul'>400 Boxes of 1L</th>
+            <th className='textl'>Liqui Fruit orange</th>
+            <th className='skul'>630 Total Boxes of 1L</th>
           
-        
           </div>
+
+          <div className='inv2'>
+            <th className='text2'>Coca Cola</th>
+            <th className='sku2'>300 Total Boxes of 2L</th>
+          
+          </div>
+
           <tbody>
             {Object.keys(inventory).map((product, index) => (
               <tr key={index}>
